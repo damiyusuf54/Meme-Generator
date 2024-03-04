@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meme Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1> Meme Generator</h1>
+    <form id="memeForm">
+      <!--Image section of form-->
+      <label for="imageUrl">Image Url:</label>
+      <input type="url" placeholder="Your URL goes here" id="imageUrl" name="imageUrl" required>
+      <!--Top text section of form-->
+      <label for="topText">Top Text:</label>
+      <input type="text" placeholder="Your Top Text goes here" id="topText" name="topText" required>
+      <!--Button text section of form-->
+      <label for="buttomText">Buttom Text:</label>
+      <input type="text" placeholder="Your Buttom text goes here" id="buttomText" name="buttomText" required>
+      <button type="submit">Generate Meme</button>
+    </form>
+    <div id="memeContainer"></div>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>
